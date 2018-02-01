@@ -1,10 +1,13 @@
 buildscript {
 	ext.kotlin_version = '1.2.21'
+	ext.spring_boot_gradle_plugin_version = '1.5.10.RELEASE'
+    ext.java_target_version = '1.8'
 
     repositories { mavenCentral() }
     
     dependencies { 
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_gradle_plugin_version")
     }
 }
 
@@ -22,10 +25,10 @@ allprojects {
     }
 
     compileKotlin {
- 	   kotlinOptions.jvmTarget = "1.8"
+ 	   kotlinOptions.jvmTarget = "$java_target_version"
 	}
 	compileTestKotlin {
-   		kotlinOptions.jvmTarget = "1.8"
+   		kotlinOptions.jvmTarget = "$java_target_version"
 	}
 	
 }

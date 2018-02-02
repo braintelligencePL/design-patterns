@@ -2,19 +2,19 @@ package less.performence.model;
 
 public class PC implements Computer {
 
-    private String dataStorage;
+    private String ssd;
     private String ram;
     private String cpu;
 
-    public PC(String dataStorage, String ram, String cpu) {
-        this.dataStorage = dataStorage;
+    public PC(String ssd, String ram, String cpu) {
+        this.ssd = ssd;
         this.ram = ram;
         this.cpu = cpu;
     }
 
     @Override
-    public String getDataStorage() {
-        return this.dataStorage;
+    public String getSSD() {
+        return this.ssd;
     }
 
     @Override
@@ -27,4 +27,12 @@ public class PC implements Computer {
         return this.cpu;
     }
 
+    @Override
+    public String toString() {
+        return "PC{" +
+                "ssd='" + ssd + '\'' +
+                ", ram='" + ram + '\'' +
+                ", cpu='" + cpu + '\'' +
+                '}';
+    }
 }

@@ -1,3 +1,3 @@
-package type;
+package design.types;
 
 public @interface BehavioralDesignPattern { }

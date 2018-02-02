@@ -1,2 +1,2 @@
 # design-patterns
-Design Patterns implemented in Java, Kotlin, Python
+Design Patterns implemented in Java, Kotlin

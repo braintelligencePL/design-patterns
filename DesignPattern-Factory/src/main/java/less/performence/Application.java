@@ -1,7 +1,6 @@
-import type.CreationalDesignPattern;
+package less.performence;
 
-@CreationalDesignPattern
-public class Main {
+public class Application {
     public static void main(String[] args) {
         System.out.println("Test");
     }

@@ -21,6 +21,6 @@ public class ComputersFactory {
                 return new Server("10GB", "32GB", "4Ghz");
 
         }
-        throw new IllegalArgumentException("That Computer type doesn't exist");
+        throw new IllegalArgumentException("That sample_1.sample_2.Computer type doesn't exist");
     }
 }

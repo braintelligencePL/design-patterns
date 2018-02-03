@@ -4,7 +4,7 @@ import better.performence.model.Computer;
 import better.performence.model.PC;
 import better.performence.model.Server;
 
-public enum ComputerType
+public enum ComputerFactory
 {
     PC("PC") {
         @Override
@@ -21,17 +21,17 @@ public enum ComputerType
 
     private String type;
 
-    ComputerType(String type) {}
+    ComputerFactory(String type) {}
 
     public abstract Computer getComputer();
 
-    public String getType() {
-        return type;
-    }
+//    public String getType() {
+//        return type;
+//    }
 
     @Override
     public String toString() {
-        return "ComputerType{" +
+        return "ComputerFactory{" +
                 "type='" + type + '\'' +
                 '}';
     }

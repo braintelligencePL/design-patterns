@@ -29,7 +29,7 @@ public class Server implements Computer{
 
     @Override
     public String toString() {
-        return "Server{" +
+        return "sample_1.sample_2.Server{" +
                 "ssd='" + ssd + '\'' +
                 ", ram='" + ram + '\'' +
                 ", cpu='" + cpu + '\'' +

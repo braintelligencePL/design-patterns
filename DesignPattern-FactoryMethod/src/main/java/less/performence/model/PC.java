@@ -29,7 +29,7 @@ public class PC implements Computer {
 
     @Override
     public String toString() {
-        return "PC{" +
+        return "sample_1.sample_2.PC{" +
                 "ssd='" + ssd + '\'' +
                 ", ram='" + ram + '\'' +
                 ", cpu='" + cpu + '\'' +

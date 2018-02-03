@@ -1,7 +1,8 @@
 package better.performence;
 
 
-import better.performence.factory.ComputerType;
+import better.performence.factory.ComputerFactory;
+import better.performence.model.Computer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import performence.PerformenceChecker;
@@ -17,14 +18,14 @@ public class Application {
 
     static
     {
-        typeMap.put("PC", ComputerType.PC);
-        typeMap.put("SERVER", ComputerType.SERVER);
+        typeMap.put("sample_1.sample_2.PC", ComputerFactory.PC);
+        typeMap.put("SERVER", ComputerFactory.SERVER);
     }
 
     public static void main(String[] args) {
 
         PerformenceChecker.startTime();
-        String result = better.performence.factory.ComputerType.PC.getComputer().toString();
+        Computer result = ComputerFactory.PC.getComputer();
         PerformenceChecker.endTimeAndPrintResult();
     }
 }

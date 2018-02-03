@@ -1,7 +1,6 @@
 package less.performence;
 
 import less.performence.factory.ComputersFactory;
-import less.performence.model.Computer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import performence.PerformenceChecker;
@@ -13,7 +12,7 @@ public class Application {
     public static void main(String[] args) {
 
         PerformenceChecker.startTime();
-        Computer pc = ComputersFactory.getComputer("pc");
+        String result = ComputersFactory.getComputer(ComputersFactory.ComputerType.PC).toString();
         PerformenceChecker.endTimeAndPrintResult();
 
     }

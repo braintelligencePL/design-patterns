@@ -24,14 +24,11 @@ enum class ComputerType {
 
 class ComputerFactory {
     fun getComputer(computerType: ComputerType): Computer? {
-        var computer: Computer? = null
 
         when (computerType) {
-            ComputerType.PC -> computer = PC()
-            ComputerType.SERVER -> computer = Server()
+            ComputerType.PC       -> return PC()
+            ComputerType.SERVER   -> return Server()
         }
-
-        return computer
     }
 }
 

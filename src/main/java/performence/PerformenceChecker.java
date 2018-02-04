@@ -16,5 +16,4 @@ public class PerformenceChecker {
         long endTime = System.nanoTime();
         LOGGER.info(String.valueOf("Time Difference :: " +  (endTime-startTime) + "ms"));
     }
-
 }

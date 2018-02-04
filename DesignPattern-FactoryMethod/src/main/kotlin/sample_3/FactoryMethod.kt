@@ -38,9 +38,7 @@ enum class ComputerFactory {
 
 fun main(args: Array<String>) {
 
-    val timeElapsed = measureNanoTime {
-        val pc = ComputerFactory.PC.getComputer()
-    }
+    val timeElapsed = measureNanoTime { val pc = ComputerFactory.PC.getComputer() }
     println(timeElapsed)
 
 }

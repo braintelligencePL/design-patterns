@@ -6,13 +6,13 @@ import better.performence.model.Server;
 
 public enum ComputerFactory
 {
-    PC("PC") {
+    PC {
         @Override
         public Computer getComputer() {
             return new PC("100GB", "8GB", "2GHz");
         }
     },
-    SERVER("SERVER") {
+    SERVER {
         @Override
         public Computer getComputer() {
             return new Server("500GB", "32GB", "3GHz");
@@ -21,13 +21,13 @@ public enum ComputerFactory
 
     private String type;
 
-    ComputerFactory(String type) {}
+    ComputerFactory() {}
 
     public abstract Computer getComputer();
 
-//    public String getType() {
-//        return type;
-//    }
+    public String getType() {
+        return type;
+    }
 
     @Override
     public String toString() {

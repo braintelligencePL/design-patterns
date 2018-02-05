@@ -18,7 +18,7 @@ public class Application {
 
     static
     {
-        typeMap.put("sample_1.sample_2.PC", ComputerFactory.PC);
+        typeMap.put("PC", ComputerFactory.PC);
         typeMap.put("SERVER", ComputerFactory.SERVER);
     }
 

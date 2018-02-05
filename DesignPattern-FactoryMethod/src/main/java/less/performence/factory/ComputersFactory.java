@@ -11,7 +11,6 @@ public class ComputersFactory {
     }
 
     public static Computer getComputer(ComputerType type) {
-        Computer computer = null;
 
         switch (type)
         {
@@ -21,6 +20,6 @@ public class ComputersFactory {
                 return new Server("10GB", "32GB", "4Ghz");
 
         }
-        throw new IllegalArgumentException("Computer type doesn't exist");
+        throw new IllegalArgumentException("Given computer type doesn't exist");
     }
 }

@@ -1,11 +1,10 @@
-package better.performence;
+package FactoryMethod.better.performence;
 
 
-import better.performence.factory.ComputerFactory;
-import better.performence.model.Computer;
+import FactoryMethod.better.performence.factory.ComputerFactory;
+import FactoryMethod.better.performence.model.Computer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import performence.PerformenceChecker;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,8 +23,8 @@ public class Application {
 
     public static void main(String[] args) {
 
-        PerformenceChecker.startTime();
+        long startTIme = System.nanoTime();
         Computer result = ComputerFactory.PC.getComputer();
-        PerformenceChecker.endTimeAndPrintResult();
+        LOGGER.info(String.valueOf(System.nanoTime() - startTIme));
     }
 }

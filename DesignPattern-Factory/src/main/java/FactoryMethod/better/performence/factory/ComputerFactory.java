@@ -1,8 +1,8 @@
-package better.performence.factory;
+package FactoryMethod.better.performence.factory;
 
-import better.performence.model.Computer;
-import better.performence.model.PC;
-import better.performence.model.Server;
+import FactoryMethod.better.performence.model.Computer;
+import FactoryMethod.better.performence.model.PC;
+import FactoryMethod.better.performence.model.Server;
 
 public enum ComputerFactory
 {

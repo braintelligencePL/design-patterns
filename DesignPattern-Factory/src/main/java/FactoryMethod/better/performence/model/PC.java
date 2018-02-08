@@ -1,4 +1,4 @@
-package less.performence.model;
+package FactoryMethod.better.performence.model;
 
 public class PC implements Computer {
 
@@ -29,7 +29,7 @@ public class PC implements Computer {
 
     @Override
     public String toString() {
-        return "sample_1.sample_2.PC{" +
+        return "PC{" +
                 "ssd='" + ssd + '\'' +
                 ", ram='" + ram + '\'' +
                 ", cpu='" + cpu + '\'' +

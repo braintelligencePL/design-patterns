@@ -1,12 +1,12 @@
-package better.performence.model;
+package FactoryMethod.less.performence.model;
 
-public class Server implements Computer {
+public class PC implements Computer {
 
     private String ssd;
     private String ram;
     private String cpu;
 
-    public Server(String ssd, String ram, String cpu) {
+    public PC(String ssd, String ram, String cpu) {
         this.ssd = ssd;
         this.ram = ram;
         this.cpu = cpu;
@@ -29,11 +29,10 @@ public class Server implements Computer {
 
     @Override
     public String toString() {
-        return "Server{" +
+        return "FactoryMethod.sample_1.FactoryMethod.sample_2.PC{" +
                 "ssd='" + ssd + '\'' +
                 ", ram='" + ram + '\'' +
                 ", cpu='" + cpu + '\'' +
                 '}';
     }
 }
-

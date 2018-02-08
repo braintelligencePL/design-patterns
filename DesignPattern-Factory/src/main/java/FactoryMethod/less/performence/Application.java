@@ -1,10 +1,9 @@
-package less.performence;
+package FactoryMethod.less.performence;
 
-import less.performence.factory.ComputersFactory;
-import less.performence.model.Computer;
+import FactoryMethod.less.performence.factory.ComputersFactory;
+import FactoryMethod.less.performence.model.Computer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import performence.PerformenceChecker;
 
 public class Application {
 
@@ -12,9 +11,9 @@ public class Application {
 
     public static void main(String[] args) {
 
-        PerformenceChecker.startTime();
+        long startTIme = System.nanoTime();
         Computer result = ComputersFactory.getComputer(ComputersFactory.ComputerType.PC);
-        PerformenceChecker.endTimeAndPrintResult();
+        LOGGER.info(String.valueOf(System.nanoTime() - startTIme));
 
     }
 }

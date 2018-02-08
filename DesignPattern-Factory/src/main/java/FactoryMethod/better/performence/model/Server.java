@@ -1,6 +1,6 @@
-package less.performence.model;
+package FactoryMethod.better.performence.model;
 
-public class Server implements Computer{
+public class Server implements Computer {
 
     private String ssd;
     private String ram;
@@ -29,7 +29,7 @@ public class Server implements Computer{
 
     @Override
     public String toString() {
-        return "sample_1.sample_2.Server{" +
+        return "Server{" +
                 "ssd='" + ssd + '\'' +
                 ", ram='" + ram + '\'' +
                 ", cpu='" + cpu + '\'' +

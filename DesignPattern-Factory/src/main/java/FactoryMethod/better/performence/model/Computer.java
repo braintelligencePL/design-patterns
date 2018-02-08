@@ -1,4 +1,4 @@
-package less.performence.model;
+package FactoryMethod.better.performence.model;
 
 public interface Computer {
     String getSSD();

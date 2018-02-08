@@ -1,8 +1,8 @@
-package less.performence.factory;
+package FactoryMethod.less.performence.factory;
 
-import less.performence.model.Computer;
-import less.performence.model.PC;
-import less.performence.model.Server;
+import FactoryMethod.less.performence.model.PC;
+import FactoryMethod.less.performence.model.Computer;
+import FactoryMethod.less.performence.model.Server;
 
 public class ComputersFactory {
 

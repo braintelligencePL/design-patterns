@@ -1,4 +1,4 @@
-package sample_1
+package FactoryMethod.sample_1
 
 import kotlin.system.measureNanoTime
 

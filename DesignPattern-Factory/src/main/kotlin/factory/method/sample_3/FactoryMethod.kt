@@ -1,4 +1,4 @@
-package FactoryMethod.sample_3
+package factory.method.sample_3
 
 import kotlin.system.measureNanoTime
 
@@ -34,7 +34,6 @@ enum class ComputerFactory {
     abstract fun getComputer(): Computer
 
 }
-
 
 fun main(args: Array<String>) {
 

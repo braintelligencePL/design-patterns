@@ -1,4 +1,4 @@
-package FactoryMethod.sample_1
+package factory.method.sample_1
 
 import kotlin.system.measureNanoTime
 
@@ -26,8 +26,8 @@ class ComputerFactory {
     fun getComputer(computerType: ComputerType): Computer? {
 
         when (computerType) {
-            ComputerType.PC       -> return PC()
-            ComputerType.SERVER   -> return Server()
+            ComputerType.PC -> return PC()
+            ComputerType.SERVER -> return Server()
         }
     }
 }

@@ -1,4 +1,4 @@
-package FactoryMethod.sample_2
+package factory.method.sample_2
 
 import kotlin.system.measureNanoTime
 
@@ -27,8 +27,8 @@ class ComputerFactory {
         var computer: Computer? = null
 
         when (computerType) {
-            ComputerType.PC       -> computer = PC(ssd = "100GB", ram = "8GB", cpu = "2GHz")
-            ComputerType.SERVER   -> computer = Server(ssd = "500GB", ram = "32GB", cpu = "3GHz")
+            ComputerType.PC -> computer = PC(ssd = "100GB", ram = "8GB", cpu = "2GHz")
+            ComputerType.SERVER -> computer = Server(ssd = "500GB", ram = "32GB", cpu = "3GHz")
         }
 
         return computer

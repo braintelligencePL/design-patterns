@@ -34,7 +34,9 @@ class ComputerFactory {
 
 fun main(args: Array<String>) {
 
-    val timeElapsed = measureNanoTime { val pc = ComputerFactory().getComputer(ComputerType.PC) }
+    val timeElapsed = measureNanoTime {
+        val pc = ComputerFactory().getComputer(ComputerType.PC)
+    }
     print(timeElapsed)
 
 }

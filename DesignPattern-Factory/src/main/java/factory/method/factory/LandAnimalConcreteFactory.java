@@ -1,6 +1,5 @@
 package factory.method.factory;
 
-import factory.method.factory.animal.AnimalFactory;
 import factory.method.factory.animal.land.Dinosaur;
 import factory.method.factory.animal.land.Dog;
 

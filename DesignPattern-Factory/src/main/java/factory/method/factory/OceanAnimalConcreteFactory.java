@@ -8,12 +8,8 @@ public class OceanAnimalConcreteFactory implements AnimalFactory {
     @Override
     public String getAnimal() {
 
-        StringBuilder oceanAnimals = new StringBuilder();
-
-        oceanAnimals.append("Land Animals: \n");
-        oceanAnimals.append(new Tuna().getName() + "\n");
-        oceanAnimals.append(new Salmon().getName() + "\n");
-
-        return oceanAnimals.toString();
+        return "Ocean Animals: \n" +
+                new Tuna().getName() + "\n" +
+                new Salmon().getName() + "\n";
     }
 }

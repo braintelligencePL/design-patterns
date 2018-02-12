@@ -13,7 +13,6 @@ public class Application {
         // Making EarthAnimalsFactory - Ocean Animals
         System.out.println(new EarthAnimalsFactory().createAnimal(AnimalType.OCEAN));
 
-
     }
 
 }

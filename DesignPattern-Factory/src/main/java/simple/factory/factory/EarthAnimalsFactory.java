@@ -7,7 +7,6 @@ import simple.factory.factory.animal.ocean.Salmon;
 import simple.factory.factory.animal.ocean.Tuna;
 
 public class EarthAnimalsFactory {
-    private StringBuilder animals;
 
     public String createAnimal(AnimalType animalType) {
 
